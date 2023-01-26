@@ -1,6 +1,6 @@
 # QA-Stocks
 
-This is a stock-predictor made with [SciPy](https://scipy.org) and [YFinance](https://pypi.org/project/yfinance/).
+This is a stock-predictor made with _[SciPy](https://scipy.org)_ and _[YFinance](https://pypi.org/project/yfinance/)_.
 
 ***This is my first time trying to create a repository. So please don't judge me too hard!***
 
@@ -14,10 +14,12 @@ To use this application, you need Python, SciPy and YFinance installed (all pref
 
 ### How to run
 
-If you're using Mac/Linux, then run:
+If you're using **Mac/Linux**, then run:
 
 `python3 main.py`
 
-And if you're using Windows, then:
+And if you're using **Windows**, then:
 
 `python main.py`
+
+_If you have any suggestions, feel free to share them with me!_
