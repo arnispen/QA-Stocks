@@ -4,7 +4,12 @@ from datetime import date
 from scipy import stats
 import os
 
-isolated_column = input("What do you want to predict? (Open/High/Low/Close/Adj Close/Volume) ")
+isolated_column = input("What do you want to predict? (Open/High/Low/Close/Adj Close/Volume): ")
+
+if isolated_column.lower() == "adj close":
+    isolated_column = "Adj Close"
+else:
+    isolated_column = isolated_column.capitalize()
 
 x = []
 y = []
@@ -28,15 +33,15 @@ slope, intercept, r, p, std_err = stats.linregress(x, y)
 def model(x):
   return slope * x + intercept
 
-wanted_prediction = int(input("How far ahead from today do you want to predict? ")) + line_count
+wanted_prediction = int(input("How far ahead from today do you want to predict? (in days): ")) + line_count
 
 prediction = model(wanted_prediction)
 
 if today_column < prediction:
-    print("The prediction is it will be higher (According to the week).")
+    print("The prediction is it will be higher (according to the week).")
 elif today_column > prediction:
-    print("The prediction is it will be lower (According to the week).")
+    print("The prediction is it will be lower (according to the week).")
 else:
-    print("The prediction is it will stay the same (According to the week).")
+    print("The prediction is it will stay the same (according to the week).")
 
 print("And the R is:", r)

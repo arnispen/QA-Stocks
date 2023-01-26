@@ -8,7 +8,7 @@ start_date = str(date.today() - timedelta(weeks=1))
 
 end_date = str(date.today())
 
-print(start_date, end_date)
+print("Taken data from:", start_date, "to", end_date)
 data = yf.download(stock, start=start_date, end=end_date)
 
 data.to_csv(f"{stock}.csv")

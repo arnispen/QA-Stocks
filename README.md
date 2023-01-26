@@ -2,7 +2,7 @@
 
 This is a stock-predictor made with _[SciPy](https://scipy.org)_ and _[YFinance](https://pypi.org/project/yfinance/)_.
 
-***This is my first time trying to create a repository. So please don't judge me too hard!***
+***This is my first time trying to create a repository, so please don't judge me too hard!***
 
 ------
 
