@@ -22,4 +22,4 @@ And if you're using **Windows**, then:
 
 `python main.py`
 
-_If you have any suggestions, feel free to share them with me!_
+> If you have any suggestions, feel free to share them with me!
